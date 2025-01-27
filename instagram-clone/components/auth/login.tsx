@@ -31,7 +31,7 @@ export default function Login({ setView }) {
 			provider: 'kakao',
 			options: {
 				redirectTo: process.env.NEXT_PUBLIC_VERCEL_URL
-					? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/auth/callback`
+					? `${process.env.NEXT_PUBLIC_VERCEL_URL}/auth/callback`
 					: 'http://localhost:3000/auth/callback',
 			},
 		});
